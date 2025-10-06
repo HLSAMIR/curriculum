@@ -1,259 +1,207 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Web</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <script src="https://kit.fontawesome.com/70d6547a17.js" crossorigin="anonymous"></script>
-    <!-- BOXICONS -->
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum Web - Omar Samir Hernández López</title>
 
-    <!-- CUSTOM STYLES -->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- ICONOS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- ESTILOS PERSONALIZADOS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+  <div class="container">
 
-    <div class="container">
+    <!-- COLUMNA IZQUIERDA -->
+    <aside class="left_side">
+      <!-- PERFIL -->
+      <section class="profile">
+        <div class="img_setting">
+          <img src="img.jpg" alt="Foto de Omar Samir Hernández López">
+        </div>
+        <h2>Omar Samir Hernández López</h2>
+        <h4>Ingeniero en Sistemas Computacionales</h4>
+        <button class="btn" onclick="PDF()">Descargar PDF</button>
+      </section>
 
-        <div class="left_side">
+      <!-- CONTACTO -->
+      <section class="contact-section">
+        <h4 class="title">Datos de Contacto</h4>
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/omar-samir-hernandez-lopez-aab043205" target="_blank" class="social-btn linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="mailto:hernandezlopezfreelance@gmail.com" class="social-btn email" aria-label="Correo electrónico"><i class="bx bx-envelope"></i></a></li>
+          <li><a href="https://github.com/HLSAMIR" target="_blank" class="social-btn github" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://twitter.com/OmarSamirHerna1" target="_blank" class="social-btn twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100080200620735" target="_blank" class="social-btn facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        </ul>
+      </section>
 
-            <!-- PROFILE -->
-            <div class="profile">
-                <div class="img_setting">
-                    <img src="img.jpg">
-                </div>
-                <h4>Omar Samir Hernández López</h4>
-                <h5>Estudiante</h5>
-                <button class="btn" onclick="PDF();">Download PDF</button>
+      <!-- EDUCACIÓN -->
+      <section class="left_items">
+        <h4 class="title">Educación</h4>
+        <ul>
+          <li>
+            <h5 class="dates">2018 - 2024</h5>
+            <p class="text"><strong>Ingeniería en Sistemas Computacionales</strong><br>Instituto Tecnológico de Pachuca</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- IDIOMAS -->
+      <section class="left_items">
+        <h4 class="title">Idiomas</h4>
+        <ul class="languages">
+          <li>
+            <span class="text">Inglés</span>
+            <div class="percent"><div style="width: 50%"></div></div>
+          </li>
+          <li>
+            <span class="text">Español</span>
+            <div class="percent"><div style="width: 100%"></div></div>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- COLUMNA DERECHA -->
+    <main class="right_side">
+      <!-- RESUMEN -->
+      <section class="right_items">
+        <h3 class="title">Resumen de Vida</h3>
+        <p>Ingeniero en Sistemas Computacionales con experiencia en desarrollo front-end, soluciones en la nube e integración de inteligencia artificial. Poseo sólidos conocimientos en frameworks modernos, cloud computing y ciberseguridad, lo que me permite aportar una visión innovadora enfocada en la eficiencia tecnológica y la seguridad digital.
+Además, cuento con experiencia en mantenimiento preventivo y correctivo, instalación, configuración y reparación de equipos de cómputo, tanto personales como servidores. Soy una persona comprometida, con alta capacidad para el trabajo en equipo, toma de decisiones bajo presión y apoyo efectivo en proyectos colaborativos.</p>
+      </section>
+
+      <!-- EXPERIENCIA -->
+      <section class="right_items">
+        <h4 class="title">Experiencia</h4>
+
+        <div class="experience">
+          <div class="time_line"><span class="time_point"></span><span class="time_road"></span></div>
+          <div class="content">
+            <div class="interval">
+              <h5>2018 - Presente</h5><h5>Freelance</h5>
             </div>
-
-            <!-- CONTACT INFO -->
-            <div class="left_items">
-                <h4 class="title">DATOS DE CONTACTO</h4>
-                <ul>
-                    <li>
-                        <span class="icons">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </span>
-                        <span class="text">www.linkedin.com/in/omar-samir-hernandez-lopez-aab043205</span>
-                    </li>
-                    <li>
-                        <span class="icons">
-                            <i class="bx bx-envelope"></i>
-                        </span>
-                        <span class="text">hernandezlopezfreelance@gmail.com</span>
-                    </li>
-                    <li>
-                        <span class="icons">
-                            <i class="fa fa-github fa-lg" aria-hidden="true"></i>
-                        </span>
-                        <span class="text"> https://github.com/HLSAMIR</span>
-                    </li>
-                    <li>
-                        <span class="icons">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </span>
-                        <span class="text"> https://twitter.com/OmarSamirHerna1</span>
-                    </li>
-                    <li>
-                        <span class="icons">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </span>
-                        <span class="text"> https://www.facebook.com/profile.php?id=100080200620735</span>
-                    </li>
-                </ul>
+            <div class="description">
+              <h4>Técnico de Computadoras</h4>
+              <p>Reparación y mantenimiento correctivo/preventivo de computadoras de escritorio y laptops.</p>
             </div>
-
-            <!-- EDUCATION -->
-            <div class="left_items">
-                <h4 class="title">EDUCACIÓN</h4>
-                <ul>
-                    <li>
-                        <h5 class="dates">2018 - 2024</h4>
-                        <h4 class="text">INGENIERÍA EN SISTEMAS COMPUTACIONALES</h5>
-                        <h4 class="text">INSTITUTO TECNOLÓGICO DE PACHUCA</h5>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- CERTIFICATINS -->
-            <!-- <div class="left_items">
-                <h4 class="title">Certificates</h4>
-                <ul>
-                    <li>
-                        <h5 class="dates">February, 2021</h5>
-                        <h4 class="text">CS50's Web Programming</h4>
-                        <h4 class="text">HarvardX</h4>
-                    </li>
-                </ul>
-            </div> -->
-
-            <!-- LANGUAGES -->
-            <div class="left_items">
-                <h4 class="title">IDIOMAS</h4>
-                <ul class="languages">
-                    <li>
-                        <span class="text">INGLÉS</span>
-                        <div class="percent">
-                            <div style="width: 50%"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="text">ESPAÑOL</span>
-                        <div class="percent">
-                            <div style="width: 100%"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
+          </div>
         </div>
 
-        <div class="right_side">
-
-            <!-- SUMMARY -->
-            <div class="right_items">
-                <h3 class="title">Resumend de vida</h3>
-                <p>Soy una persona que realiza varias actividades y realiza, entiendo como función las relaciones y como esto afecta a mi entorno gracias a mi inteligencia emocional.
-                    Me capacite personalmente para poder realizar reparación, instalación y armar equipos de computo desde computadoras a servidores.
-                    Mi personalidad es de trabajo en equipo, puedo tomar decisiones en entornos estresantes y puedo ser un gran apoyo.
-                    </p>
+        <div class="experience">
+          <div class="time_line"><span class="time_point"></span><span class="time_road"></span></div>
+          <div class="content">
+            <div class="interval">
+              <h5>2018 - Presente</h5><h5>Freelance</h5>
             </div>
-
-            <!-- EXPERIENCE -->
-            <div class="right_items">
-                <h4 class="title">EXPERIENCIA</h4>
-
-                <div class="experience">
-                    <div class="time_line">
-                        <span class="time_point"></span>
-                        <span class="time_road"></span>
-                    </div>
-                    <div class="content">
-                        <div class="interval">
-                            <h5>2018 - Present</h5>
-                            <h5>freelance</h5>
-                        </div>
-                        <div class="description">
-                            <h4>TÉCNICO DE COMPUTADORAS</h4>
-                            <p>Resuelvo todas las soluciones en reparación de computadoras Laptop y Desktop servicios garantizados, Mantenimientos
-                                Correctivos y Preventivos.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience">
-                    <div class="time_line">
-                        <span class="time_point"></span>
-                        <span class="time_road"></span>
-                    </div>
-                    <div class="content">
-                        <div class="interval">
-                            <h5>2018 - Present</h5>
-                            <h5>freelance</h5>
-                        </div>
-                        <div class="description">
-                            <h4>PROGRAMADOR JUNIOR</h4>
-                            <p>MANEJO A NIVEL BÁSICO DE LENGUAJES DE PROGRAMACIÓN.</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="description">
+              <h4>Programador Junior</h4>
+              <p>Desarrollo básico en distintos lenguajes de programación y soporte técnico en proyectos.</p>
             </div>
-
-            <!-- SKILLS -->
-            <div class="right_items">
-                <h4 class="title">HABILIDADES PROFESIONALES</h4>
-                <div class="skills">
-                    <h4>HTML</h4>
-                    <div class="percent">
-                        <div style="width: 98%"></div>
-                    </div>
-                </div>
-                <div class="skills">
-                    <h4>CSS</h4>
-                    <div class="percent">
-                        <div style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skills">
-                    <h4>JavaScript</h4>
-                    <div class="percent">
-                        <div style="width: 10%"></div>
-                    </div>
-                </div>
-                <div class="skills">
-                    <h4>Arquitectura de computadoras</h4>
-                    <div class="percent">
-                        <div style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skills">
-                    <h4>Sistemas Operativos</h4>
-                    <div class="percent">
-                        <div style="width: 85%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- HOBBIES -->
-            <div class="right_items">
-                <h4 class="title">PASATIEMPO</h4>
-                <ul class="hobby">
-                    <li><span class="material-icons">
-                        cookie
-                        </span> COSINA</li>
-                    <li><span class="material-icons">
-                        mouse
-                        </span>DISEÑO GRAFICO</li>
-                    <li><span class="material-icons">videogame_asset</span></span>VIDEOJUEGOS</li>
-                </ul>
-            </div>
-
+          </div>
         </div>
 
-    </div>
+        <div class="experience">
+          <div class="time_line"><span class="time_point"></span><span class="time_road"></span></div>
+          <div class="content">
+            <div class="interval">
+              <h5>2023 - 2025</h5><h5>Mural Táctil</h5>
+            </div>
+            <div class="description">
+              <h4>Desarrollador Web</h4>
+              <p>Experiencia en desarrollo de sitios con WordPress y desde cero, además de mantenimiento, migración e implementación.</p>
+            </div>
+          </div>
+        </div>
 
-    <!-- HTML2PDF SOURCE -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="experience">
+          <div class="time_line"><span class="time_point"></span><span class="time_road"></span></div>
+          <div class="content">
+            <div class="interval">
+              <h5>2024 - 2025</h5><h5>Mural Táctil</h5>
+            </div>
+            <div class="description">
+              <h4>Tester de Proyectos</h4>
+              <p>Pruebas manuales de software para desarrollo de soluciones, páginas web y sistemas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- CUSTOM JS -->
-    <script type="text/javascript">
-    
-        function PDF(){
-            const e = document.querySelector(".container");
+        <div class="experience">
+          <div class="time_line"><span class="time_point"></span><span class="time_road"></span></div>
+          <div class="content">
+            <div class="interval">
+              <h5>2023 - 2025</h5><h5>Mural Táctil</h5>
+            </div>
+            <div class="description">
+              <h4>Tec mantenimiento</h4>
+              <p>Desempeñé el puesto de Técnico en Mantenimiento, realizando mantenimiento preventivo y correctivo de equipos y sistemas tecnológicos, instalación y configuración de software y hardware, así como soporte técnico a usuarios y optimización del rendimiento de los equipos.</p>
+            </div>
+          </div>
+        </div>
 
-            // RESIZE
-            e.style.maxWidth = "700px";
-            
-            // OPTIONS
-            const opt = {
-                filename: 'resume.pdf',
-                image: {
-                    type: "jpg",
-                    quality: 0.99
-                },
-                margin: 0,
-                jsPDF: {
-                    unit: "pt",
-                    format: "letter",
-                    orientation: "portrait"
-                },
-                pagebreak: {
-                    mode: ["avoid-all", "css", "legacy"]
-                }
-            };
-            html2pdf().set(opt).from(e).save();
+      <!-- HABILIDADES -->
+      <section class="right_items">
+        <h4 class="title">Habilidades Profesionales</h4>
+        <div class="skills"><h4>Arquitectura de Computadoras</h4><div class="percent"><div style="width: 85%"></div></div></div>
+        <div class="skills"><h4>Sistemas Operativos</h4><div class="percent"><div style="width: 85%"></div></div></div>
+        <div class="skills"><h4>Framework RASA</h4><div class="percent"><div style="width: 75%"></div></div></div>
+        <div class="skills"><h4>Tester</h4><div class="percent"><div style="width: 45%"></div></div></div>
+        <div class="skills"><h4>Atención al Cliente</h4><div class="percent"><div style="width: 65%"></div></div></div>
+        <div class="skills"><h4>Desarrollo en WordPress</h4><div class="percent"><div style="width: 80%"></div></div></div>
+      </section>
 
-            // RESIZE
-            setTimeout(() => {e.style.maxWidth = "1400px";}, 2000);
-        }
+      <!-- LENGUAJES DE PROGRAMACIÓN -->
+      <section class="right_items">
+        <h4 class="title">Lenguajes de Programación</h4>
+        <div class="skills"><h4>HTML</h4><div class="percent"><div style="width: 98%"></div></div></div>
+        <div class="skills"><h4>CSS</h4><div class="percent"><div style="width: 75%"></div></div></div>
+        <div class="skills"><h4>JavaScript</h4><div class="percent"><div style="width: 25%"></div></div></div>
+        <div class="skills"><h4>Python</h4><div class="percent"><div style="width: 50%"></div></div></div>
+        <div class="skills"><h4>C#</h4><div class="percent"><div style="width: 30%"></div></div></div>
+      </section>
 
-    </script>
-    
+      <!-- PASATIEMPOS -->
+      <section class="right_items">
+        <h4 class="title">Pasatiempos</h4>
+        <ul class="hobby">
+          <li><span class="material-icons">cookie</span> Cocina</li>
+          <li><span class="material-icons">mouse</span> Diseño Gráfico</li>
+          <li><span class="material-icons">videogame_asset</span> Videojuegos</li>
+          <li><span class="material-icons">brush</span> Dibujo</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- LIBRERÍAS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- JS PERSONAL -->
+  <script>
+    function PDF() {
+      const e = document.querySelector(".container");
+      e.style.maxWidth = "700px";
+
+      const opt = {
+        filename: 'resume.pdf',
+        image: { type: "jpeg", quality: 0.98 },
+        margin: 0,
+        jsPDF: { unit: "pt", format: "letter", orientation: "portrait" },
+        pagebreak: { mode: ["avoid-all", "css", "legacy"] }
+      };
+
+      html2pdf().set(opt).from(e).save();
+      setTimeout(() => { e.style.maxWidth = "1400px"; }, 2000);
+    }
+  </script>
 </body>
 </html>
